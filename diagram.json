@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "author": "gs-sono",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp32", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "ledOk",
+      "top": -118.8,
+      "left": 128.6,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "ledSono",
+      "top": -118.8,
+      "left": 186.2,
+      "attrs": { "color": "red" }
+    },
+    { "type": "wokwi-buzzer", "id": "buzz", "top": -151.2, "left": 30.6, "attrs": {} },
+    { "type": "wokwi-pushbutton", "id": "btnSono", "top": -137.8, "left": -67.2, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp32:26", "ledOk:A", "green", [ "h0" ] ],
+    [ "ledOk:C", "esp32:GND.1", "black", [ "v0" ] ],
+    [ "esp32:25", "ledSono:A", "red", [ "h0" ] ],
+    [ "ledSono:C", "esp32:GND.1", "black", [ "v10" ] ],
+    [ "esp32:27", "buzz:1", "blue", [ "h0" ] ],
+    [ "buzz:2", "esp32:GND.2", "black", [ "v10" ] ],
+    [ "esp32:14", "btnSono:1", "yellow", [ "h0" ] ],
+    [ "btnSono:2", "esp32:GND.2", "black", [ "h10" ] ],
+    [ "esp32:GND.2", "btnSono:2.r", "black", [ "h0" ] ],
+    [ "esp32:D26", "ledOk:A", "green", [ "h0" ] ],
+    [ "esp32:D25", "ledSono:A", "red", [ "h0" ] ],
+    [ "buzz:1", "esp32:D27", "blue", [ "v0" ] ],
+    [ "btnSono:2.l", "esp32:D14", "violet", [ "v230.6", "h72.2" ] ]
+  ],
+  "dependencies": {}
+}
