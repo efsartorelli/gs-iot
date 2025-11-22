@@ -1,4 +1,4 @@
-🟦🟩 ORBITA – Monitoramento de Sonolência (Global Solution IoT) 🟩🟦
+🟦🟩 Monitoramento de Sonolência (Global Solution IoT) 🟩🟦
 ==================================================================
 
 📌 Sobre o Projeto
@@ -133,7 +133,8 @@ const char* password = "SENHA";
 
 👨‍💻 Desenvolvido por
 ----------------------
-**Kaue Pastori Teixeira**  
+RM94618 - Enzo Vazquez Sartorelli
+RM94524 - Eduardo de Oliveira Nistal
 Global Solution – IoT  
 FIAP – Engenharia de Software  
 
